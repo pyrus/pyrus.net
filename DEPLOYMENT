@@ -1,0 +1,21 @@
+Deploying the pyrus.net website to live
+===========================================
+
+Prerequisites
+-------------
+The developer needs a SSH account on `pyrus.net` and
+has to be in the `pyrusweb` group.
+
+
+Local setup
+-----------
+::
+
+$ git remote add live ssh://pyrus.net/var/www/html/pyrus.net
+
+
+Deployment
+----------
+::
+
+$ git push live master
