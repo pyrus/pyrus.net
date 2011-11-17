@@ -14,7 +14,9 @@
             </ul>
         </nav>
         <section>
-            
+            <h2>We're Just Getting Started.</h2>
+            <p>Pyrus is the next-generation installer for PEAR-compatible packages. We're just getting started, stay tuned for more information.</p>
+            <p>Follow the development on GitHub. <a href="https://github.com/pyrus">https://github.com/pyrus</a></p>
         </section>
         <footer>
             &copy; <?php echo date('Y'); ?>

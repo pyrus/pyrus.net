@@ -25,6 +25,15 @@ body {
 	background-image: url(../images/background.png), -o-linear-gradient(top, #404040, #000000);
 }
 
+p {
+	margin:0 0 1em;
+}
+
+a {
+	color:#bed62f;
+	text-decoration:none;
+}
+
 nav {
 	position:absolute;
 	top:0;
@@ -42,6 +51,7 @@ nav a {
 
 header {
 	padding-top:3em;
+	margin-bottom:220px;
 }
 
 h1 {
@@ -54,6 +64,21 @@ h1 {
 	width:295;
 	text-align:center;
 }
+
+section {
+	width:700px;
+	margin:auto;
+	color:#fff;
+}
+
+section h2 {
+	color:#bed62f;
+	font-size:3em;
+	text-transform:uppercase;
+	line-height:1em;
+	margin-bottom:0.3em;
+}
+
 
 footer {
 	width:100%;
