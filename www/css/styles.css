@@ -13,7 +13,7 @@ html {
 body {
 	height: 100%;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-position:50% 3em;
 	/* fallback */
 	background-color: #000000;
