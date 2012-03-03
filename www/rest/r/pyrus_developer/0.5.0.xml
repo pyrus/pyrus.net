@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+ <p xlink:href="rest/p/pyrus_developer">Pyrus_Developer</p>
+ <c>pyrus.net</c>
+ <v>0.5.0</v>
+ <st>alpha</st>
+ <l>New BSD License</l>
+ <m>saltybeagle</m>
+ <s>Developer tools for the Pyrus installer
+</s>
+ <d>
+This package contains several custom commands for Pyrus.
+
+Included are commands for:
+
+* Creating PEAR2 and PECL package skeletons
+    * `php pyrus.phar generate-pear2 MyNewPackage`
+    * [generate-pear2 documentation][1]
+* Creating a package.xml file
+    * `php pyrus.phar make`
+    * [make documentation][2]
+* Packaging PEAR2 and PEAR releases
+    * `php pyrus.phar package`
+    * [package documentation][3]
+* Running phpt tests and generating code coverage reports
+    * `php pyrus.phar run-phpt -m`
+    * [run-phpt documentation][4]
+
+For more information, read the [documentation][5].
+
+[1]: http://pear.php.net/manual/en/pyrus.commands.generatepear2.php
+[2]: http://pear.php.net/manual/en/pyrus.commands.make.php
+[3]: http://pear.php.net/manual/en/pyrus.commands.package.php
+[4]: http://pear.php.net/manual/en/pyrus.commands.runphpt.php
+[5]: http://pear.php.net/manual/en/pyrus.developers.php
+</d>
+ <da>2012-03-03 09:08:00</da>
+ <n>Features:
+
+ - Simplify package skeleton generator, #5 [till]
+ - Automatically exclude files ignored by version control, #12 [fpoirotte]
+ - Allow channel aliases in several commands, #7, #13 [fpoirotte]
+ - Substitute @PACKAGE_NAME@ with the package's name, #11 [fpoirotte]
+
+Bug Fixes/Refactoring:
+
+ - Removed the PEAR2 namespace and made Pyrus the top level namespace.
+   This means all includes and classes need to drop the PEAR2 portion [helgi]
+ - Rename package from PEAR2_Pyrus_Developer to Pyrus_Developer [saltybeagle]
+ - Remove Subversion references [saltybeagle]
+ - Backslash escaped incorrectly in package skeleton stub, #15 [sasezaki]
+ - Return proper values when tests pass/fail, #16 [saltybeagle]
+</n>
+ <f>79413</f>
+ <g>http://pyrus.net/get/Pyrus_Developer-0.5.0</g>
+ <x xlink:href="package.0.5.0.xml"/>
+</r>
